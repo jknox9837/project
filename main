@@ -1,0 +1,27 @@
+class NetworkApp
+{
+        private:
+        public:
+                void addDevice(Device device)
+                void establishConnection(Device source, Device target)
+};
+
+class Device :  NetworkApp
+{
+        private:
+                string id;
+                string status;
+        public:
+                void initialize()
+                string getStatus()
+};
+
+class Connection : private NetworkApp
+{
+        private:
+                Device source;
+                Device target;
+                int bandwidth;
+        public:
+                void establish()
+}
